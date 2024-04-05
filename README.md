@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Dee2310
-- 👀 I’m interested in coding 
-- 🌱 I’m currently learning Vue js
-- 💞️ I’m looking to collaborate on Vue js
+- 👀 I’m interested in Developing
+- 🌱 I’m currently learning Node JS
+- 💞️ I’m looking to collaborate on Nuxt Apps/Projects
 - 📫 How to reach me okongordestiny@gmail.com
 
 <!---
