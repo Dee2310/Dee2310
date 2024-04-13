@@ -1,0 +1,531 @@
+/* Primary styles*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --themeRed: #e43a47;
+    --deepBlue: #5aaadc;
+    --gray: #efefef;
+    --bluekinda: #2580ee;
+}
+html{
+    scroll-behavior: smooth;
+}
+button,
+body {
+    font-family: 'poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.full-container {
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--deepBlue);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--deepBlue);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+}
+
+/* Primary End */
+
+/* Home Style */
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 15px 0;
+    height: 75px;
+}
+
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: var(--deepBlue);
+    border-radius: 15px;
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100;
+    background-image: url("../Images/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span{
+    background-color: var(--deepBlue);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.banner button{
+    background-color: var(--bluekinda);
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+/* Home End */
+
+
+/* AboutSEction Start*/
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+#aboutSection .cards >div{
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 10px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: var(--deepBlue);
+    padding: 55px;
+    height: auto;
+}
+
+#aboutSection .cards > div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#aboutSection .cards >div button{
+    border: 1px solid var(--deepBlue);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#aboutSection .cards > div:hover button{
+    background-color: var(--bluekinda);
+    color: #fff;
+
+
+}
+/* AboutSEction End*/
+
+/* program section Start*/
+.projects{
+    background-color: #e2e2e2;
+}
+
+.projects .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.projects .boxContainer .box{
+    background-color: #b8bfd6;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.projects .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.projects .boxContainer .box .cardImage::after {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.projects .boxContainer .box:nth-child(1) .cardImage,
+.projects .boxContainer .box:nth-child(1) .cardImage::after{
+    background-image: url("../Images/programs/1.jpg");
+}
+
+.projects .boxContainer .box:nth-child(2) .cardImage,
+.projects .boxContainer .box:nth-child(2) .cardImage::after{
+    background-image: url("../Images/programs/2.jpg");
+}
+
+.projects .boxContainer .box:nth-child(3) .cardImage,
+.projects .boxContainer .box:nth-child(3) .cardImage::after{
+    background-image: url("../Images/programs/3.jpg");
+}
+
+.projects .boxContainer .box:nth-child(4) .cardImage,
+.projects .boxContainer .box:nth-child(4) .cardImage::after{
+    background-image: url("../Images/programs/4.jpg");
+}
+
+.projects .boxContainer .box:hover .cardImage::after{
+    top: 100%;
+}
+
+.projects .boxContainer .box .projectTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.projects .boxContainer .box .donationCount{
+    font-size: 13px;
+    font-weight: 600px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.projects .boxContainer .box .donationCount span{
+    color: #19335a;
+}
+
+.projects .boxContainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: var(--deepBlue);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 20px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+/* program section End*/
+
+/* Education section Start*/
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.education .videoPlayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.education .sectionTitle{
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+.education .educationContainer{
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top: 35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.education .educationContainer h3 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.education .educationContainer p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+
+.education .educationContainer button{
+    background-color: var(--deepBlue);
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* Education section End*/
+
+/* Join section Start*/
+.join{
+    background-image: url('../Images/pattern2.jpg') ;
+    color: #000;
+}
+
+.join .joinTitle{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.join .joinTitle span{
+    font-weight: 800;
+}
+
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.join button.joinNow{
+    margin-right: 10px;
+    background-color: #9ebaf3;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.join button.helpBtn{
+    background-color: #353a5f;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Join section End*/
+/* Contact section Start*/
+.contactForm{
+    background-color: #f5f5f5;
+}
+.formContainer{
+    width: 100%;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #dfdddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+form input,
+form textarea{
+    font-family: inherit;
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+form input:focus,
+form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+form button{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2580ee;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form button:hover{
+    background-color: #083878;
+}
+/* Contact section End*/
+
+
+/* Footer Start*/
+footer{
+    background-color: #697a98;
+    color: #dbe0f2;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer .linksContainer ul{
+    list-style-type: none;
+}
+
+footer .linksContainer ul li a{
+    text-decoration: none;
+    color: #dbe0f2;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .newsLetterContainer img{
+    height: 40px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input{
+    background-color: transparent;
+    border: 1px solid #dbe0f2;
+    outline: none;
+    padding: 15px 20px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+footer .newsLetterContainer input::placeholder{
+    color: #dbe0f2;
+}
+/* Footer End*/
+
+
+/* Responsive Code Start*/
+
+/* Responsive Code End*/
+
+
